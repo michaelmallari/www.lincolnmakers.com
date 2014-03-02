@@ -19,6 +19,8 @@
 				}
 			} ?></title>
 		<meta name="robots" content="noindex, nofollow">
+		<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/img/icon.jpg">
+		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 		<meta name="description" content="<?
 			if( get_post_meta($post->ID, 'meta-description', true) != null ) {
 				echo get_post_meta($post->ID, 'meta-description', true);
@@ -69,16 +71,29 @@
 			}
 		?>">
 		<meta property="og:url" content="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>">
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css?v=3.0.0">
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/flexslider.css?v=2.0">
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap-3.1.1.min.css">
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/flexslider-2.2.0.css">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700|Crimson+Text">
-<!--[if lt IE 9]>
-		<script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/respond.min.js"></script>
-<![endif]-->
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-		<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/img/icon.jpg">
-		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
+<!--[if lt IE 9]>
+		<script src="<?php bloginfo('template_directory'); ?>/js/html5shiv-3.7.0.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/respond-1.4.2.min.js"></script>
+<![endif]-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/bootstrap-3.1.1.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider-2.2.0.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.flexslider').flexslider({
+					animation: "slide",
+					animationLoop: true,
+					directionNav: false,
+					itemMargin: 0,
+					slideshowSpeed: 15000,
+					touch: true
+				});
+			});
+		</script>
 		<script>
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-6570849-1']);
@@ -137,7 +152,7 @@
 				</div>
 			</div><!--/.container -->
 		</header>
-<!--/#header -->
+<!--/body > #header -->
 
 
 

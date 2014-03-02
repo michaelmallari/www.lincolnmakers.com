@@ -24,7 +24,7 @@
 	echo $content;  
 ?>
 		</footer>
-<!--/#footer -->
+<!--/body > #footer -->
 
 
 
@@ -48,34 +48,5 @@
 <?php endwhile; else: ?>
 <?php endif; ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js?v=3.0.0"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.min.js?v=2.1"></script>
-		<script>
-			$(document).ready(function() {
-				$('.flexslider').flexslider({
-					animation: "slide",
-					animationLoop: true,
-					directionNav: false,
-					itemMargin: 0,
-					slideshowSpeed: 15000,
-					touch: true
-				});
-			});
-		</script>
 	</body>
 </html>
