@@ -1,0 +1,934 @@
+/*
+Theme Name: Lincoln Makers
+Theme URI:
+Author: Michael Mallari
+Author URI: michael@michaelmallari.com
+Description: Responsive design theme powered by Twitter Bootstrap 3.
+Version: 1.0
+License:
+License URI:
+Tags:
+Text Domain: lincolnmakers
+*/
+
+
+
+
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Reset
+ * 2.0 - Repeatable patterns
+ * 3.0 - Basic structure
+ * 4.0 - Header
+ * 5.0 - Content
+ * 6.0 - Footer
+ * 7.0 - Media queries
+ *		7.1 - Styles for iPhone landscape and up
+ *		7.2 - Styles for extra small devices only
+ *		7.3 - Styles for small, medium, and large devices
+ *		7.4 - Styles for small devices only
+ *		7.5 - Styles for extra small and small devices
+ *		7.6	- Styles for medium and large devices
+ *		7.7 - Styles for large devices only
+ * ----------------------------------------------------------------------------
+ */
+
+
+
+
+
+/*
+
+*/
+
+
+
+
+
+
+
+
+/**
+ * 1.0 Reset
+ * ----------------------------------------------------------------------------
+ */
+* {
+	text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 2.0 Repeatable patterns
+ * ----------------------------------------------------------------------------
+ */
+.container {
+	max-width: 980px;
+}
+.btn-primary {
+	border: none;
+}
+.btn-xs {
+	padding: 0.4em 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 3.0 Basic structure
+ * ----------------------------------------------------------------------------
+ */
+* {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	/* -webkit-transition: all .2s linear; -moz-transition: all .2s linear; -o-transition: all .2s linear; transition: all .2s linear; */
+}
+body {
+	background: #fff;
+	min-width: 320px;
+	padding-bottom: 1em;	
+}
+h1,
+h2,
+h3 {
+	font-family: 'Crimson Text', Georgia, "Times New Roman", Times, serif;
+	font-weight: normal !important;
+}
+body.home h1,
+body.page-summary h1,
+body.page-terms-and-conditions h1 {
+	font-size: 1.8em;
+}
+body.single h1 {
+	background: url('/wp-content/themes/lincolnmakers/img/000000-60.png');
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	font-weight: 400;
+	letter-spacing: 0.3em;
+	margin: 0px;
+	padding: 0.8em 1em;
+	position: absolute;
+	right: 27px;
+	text-transform: uppercase;
+	top: 12px;
+	z-index: 10;
+}
+body.single h2 {
+	font-size: 1.7em;
+	margin: 1.7em 0em 1em 0em;
+}
+body.home #content h2 {
+	border-bottom: solid 1px #eae8e7;
+	font-size: 1.5em;
+	letter-spacing: 0.05em;
+	margin: 0em 0em 0.5em 0em;
+	padding: 0.5em;	
+	text-align: center;
+}
+body.page-terms-and-conditions h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+}
+p, ul, ol {
+	color: #31261d;
+	font-size: 15px;
+	margin-bottom: 1.3em;	
+}
+p {
+	line-height: 1.4em;
+}
+a {
+	color: #b45f1a;
+	text-decoration: none !important;	
+}
+a:hover {
+	color: #b45f1a;
+}
+a.btn {
+	background: #333 !important;
+	-webkit-border-radius: 0px; border-radius: 0px;
+	color: #fff !important;
+	display: inline;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	text-align: center;	
+	text-decoration: none;
+}
+a.btn:hover {
+	background: #000 !important;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 4.0 Header
+ * ----------------------------------------------------------------------------
+ */
+#header nav#top-nav ul,
+#header nav#top-nav ul > li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;	
+}
+#header nav#top-nav ul > li > a:hover {
+	color: #fff !important;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar,
+.navbar-default {
+	background-color: transparent !important;
+	border: none !important;
+}
+.navbar-header {
+	height: 80px;
+}
+.navbar-toggle {
+	background: transparent !important;
+	border: none !important;
+	margin-top: 10px;
+	padding-right: 0px;
+}
+.icon-bar {
+	background: #333 !important;
+	height: 3px !important;
+}
+.navbar-collapse {
+	background: #333;
+	border: none !important;
+}
+#header .logo {
+	height: auto;
+	margin-top: 15px;
+	margin-left: 15px;
+	max-width: 150px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 5.0 Content
+ * ----------------------------------------------------------------------------
+ */
+#content {
+
+}
+body.home #content,
+body.page-summary #content,
+body.page-terms-and-conditions #content {
+	background: url('/wp-content/themes/lincolnmakers/img/home-hero-phone.jpg') 100% 0px no-repeat;
+	background-size: auto 130px;
+	padding-top: 130px;
+}
+#content #welcome {
+	margin: 0px;
+}
+#gift-details {
+
+}
+body.home #content #gifts a:link,
+body.home #content #gifts a:visited {
+	color: #31261d;	
+}
+body.home #content #gifts a:hover {
+	color: #b45f1a;
+}
+body.home #content #gifts img {
+	height: auto;
+	width: 100%;
+}
+body.home #content #gifts p {
+	color: #726d68 !important;
+	font-size: 1.1em;	
+	line-height: 1.3em;
+	margin-bottom: 3em;
+	text-align: center;
+}
+.gift-includes {
+	text-transform: uppercase;
+}
+p.tc {
+	background: #eae8e7;
+	font-size: 0.9em;
+	padding: 0.8em;
+}
+#locate-dealer {
+	background: #eae8e7;
+}
+#locate-dealer,
+#learn-more {
+	padding: 0.8em;
+}
+#locate-dealer p {
+	font-size: 0.9em;
+}
+#locate-dealer a.btn {
+	display: block !important;
+}
+#learn-more p {
+	font-size: 0.8em;
+}
+#side-nav {
+	padding-top: 4px;
+}
+#side-nav ul,
+#side-nav ul > li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+#side-nav ul > li {
+	margin: 0px;
+	padding: 0px;
+}
+#side-nav ul > li > a {
+	background: #000 url('/wp-content/themes/lincolnmakers/img/sidenav-arrow-right.png') no-repeat top left;
+	display: block;
+	color: #fff;
+	padding: 10px 20px 10px 40px;
+}
+#side-nav ul > li > a > h4 {
+	font-size: 1em;
+	margin: 0px 0px 6px 0px;
+}
+#side-nav ul > li > a > p {
+	color: #d0d0ce !important;
+	display: none;
+	font-size: 0.8em;
+	line-height: 1.2em;
+	margin: 0px;
+}
+#side-nav ul > li > a:hover,
+body.post-getaway #side-nav ul > li.getaway > a,
+body.post-vineyard #side-nav ul > li.vineyard > a,
+body.post-finish #side-nav ul > li.finish > a,
+body.post-look #side-nav ul > li.look > a,
+body.post-blend #side-nav ul > li.blend > a,
+body.post-icon #side-nav ul > li.icon > a {
+	background: #3a3a3a url('/wp-content/themes/lincolnmakers/img/sidenav-arrow-down.png') no-repeat top left;
+}
+body.post-getaway #side-nav ul > li.getaway > a > p,
+body.post-vineyard #side-nav ul > li.vineyard > a > p,
+body.post-finish #side-nav ul > li.finish > a > p,
+body.post-look #side-nav ul > li.look > a > p,
+body.post-blend #side-nav ul > li.blend > a > p,
+body.post-icon #side-nav ul > li.icon > a > p {
+	display: block;
+}
+.flexslider {
+	margin: 0px;
+	padding: 0px;
+}
+.flex-control-nav { 
+	bottom: -20px;;
+}
+.flex-control-nav li {
+	margin: 0 2px;
+}
+.flex-control-paging li a {
+	background: #d4d4d4;
+	-webkit-border-radius: 0px; -moz-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px;
+	box-shadow: none;
+	height: 3px;
+	width: 46px;
+}
+.flex-control-paging li a:hover {
+	background: #b45f1a;
+}
+.flex-control-paging li a.flex-active {
+	background: #3a3a3a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 6.0 Footer
+ * ----------------------------------------------------------------------------
+ */
+#footer {
+	border-top: solid 1px #eae8e7;
+	text-align: center;
+}
+#footer h5 {
+	font-size: 1.2em;
+	margin-bottom: 1.2em;
+}
+.modal-dialog {
+	width: 300px !important;
+}
+.modal-header {
+	border: none !important;
+}
+.modal-content {
+	-webkit-border-radius: 0px; border-radius: 0px;
+	margin: 5px auto !important;
+	width: 300px !important;
+}
+.youtube-player {
+	height: 146px;
+	margin: 0px auto;
+	width: 260px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 7.1 Styles for iPhone landscape and up
+ * ----------------------------------------------------------------------------
+ */
+@media (min-width: 480px) {
+	.modal-dialog {
+		width: 480px !important;
+	}
+	.modal-content {
+		margin: 8px auto !important;
+		width: 480px !important;
+	}
+	.youtube-player {
+		height: 236px;
+		margin: 0px auto;
+		width: 420px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 7.2 Styles for extra small devices only
+ * ----------------------------------------------------------------------------
+ */
+@media (max-width: 767px) {
+	.btn {
+		display: block !important;
+		font-size: 1em !important;
+		padding: 0.5em;
+	}
+
+
+
+
+
+	#header nav#top-nav ul {
+		padding: 1.4em 0em;
+	}
+	#header nav#top-nav ul > li {
+		font-size: 1.1em !important;
+		letter-spacing: 0.1em;
+		padding: 14px 0px !imporant;
+		text-transform: uppercase;
+	}
+
+
+
+
+
+	body.single h1 {
+		font-size: 0.8em;
+		right: 5;
+		top: 10;
+	}
+	.flexslider {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	#learn-more p {
+		font-size: 0.9em;
+	}
+
+
+
+
+
+	#footer {
+		margin-top: 2.5em;
+		padding-top: 2.5em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 7.3 Styles for small, medium, and large devices
+ * ----------------------------------------------------------------------------
+ */
+@media (min-width: 768px) {
+	body.page-summary h1 {
+		margin: 2em 0em 1em 0em;
+	}
+	p {
+		font-size: 1.1em;
+		line-height: 1.4em;
+		margin: 0em 0em 1.4em 0em;
+	}
+
+
+
+
+
+	.navbar-header {
+		height: 110px;
+		margin-top: -25px;
+	}
+	.navbar-collapse {
+		background: transparent;
+	}
+	#header nav#top-nav ul > li {
+		display: inline-block;
+		float: left;
+		font-size: 0.8em;
+		line-height: 35px !important;
+		margin-top: -10px;
+		margin-left: 0px;
+		padding: 0px;
+	}
+	#header nav#top-nav ul a {
+		color: #979797;
+		font-weight: 400;
+	}
+	#header nav#top-nav ul a.concierge {
+		background: url('/wp-content/themes/lincolnmakers/img/concierge-icon.png') right no-repeat;	
+		color: #70647A;
+		font-family: 'Crimson Text', Georgia, "Times New Roman", Times, serif;
+		font-size: 1.1em;
+		font-style: italic;
+		padding-right: 30px;
+	}
+	#header nav#top-nav ul a:hover,
+	#header nav#top-nav ul a.concierge:hover {
+		color: #000;	
+	}
+	body.home #header .logo,
+	body.page-summary #header .logo,
+	body.page-terms-and-conditions #header .logo,
+	#header .logo {
+		margin: 2.2em 0em 0em 0em;
+		max-width: 175px;
+	}
+	
+
+
+
+
+
+	nav.gifts {
+		padding: 0px;
+	}
+	nav.gifts li {
+		background: #000;
+		color: #fff;
+		width: 91%;
+	}
+	nav.gifts li a {
+		color: #fff;
+	}
+	nav.gifts li h3 {
+		font-size: 1.1em;
+		margin: 0em 1em 0.5em 1em;
+	}
+	nav.gifts li p {
+		font-size: 0.80em;
+		font-weight: 400;
+		margin: 0em 1em;
+	}
+
+
+
+
+	#content {
+		
+	}
+	body.home #content,
+	body.page-summary #content,
+	body.page-terms-and-conditions #content {
+		background-image: none;
+		padding-bottom: 2em;
+		padding-top: 0px;
+	}
+	body.home #content  {
+		background: url('/wp-content/themes/lincolnmakers/img/home-hero.jpg') 75% 0px no-repeat;
+	}
+	#content #welcome {
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	body.home #content #welcome h1,
+	body.home #content #welcome p {
+		width: 45%;	
+	}
+	body.home #content #welcome h1 {
+		line-height: 1em;	
+	}
+	body.home #content #welcome p {
+		font-size: 1em;
+		line-height: 1.3em;	
+	}
+
+
+	.flex-control-nav { 
+		bottom: -30px;;
+	}
+
+
+	body.home #content #gifts p {
+		margin-bottom: 2em;
+	}
+	body.page-summary #content {
+		background: url('/wp-content/themes/lincolnmakers/img/bg-2.jpg') 11% 0px no-repeat;
+	}
+	body.page-summary #content h1,
+	body.page-summary #content p {
+		width: 67%;
+	}
+	body.page-summary #content h1 {
+		font-size: 2em;
+	}
+	body.page-summary #content .hidden-xs {
+		margin-top: -20px;
+	}
+	body.page-summary #content .hidden-xs a {
+		display: inline !important;
+		margin-right: 3px;
+	}
+
+
+
+
+
+	#footer {
+		margin-top: 2em;
+		padding-top: 1em;	
+	}
+	#footer h5,
+	#footer p {
+		font-size: 0.85em;
+		text-align: center;
+	}
+	#footer h5 {
+		display: block;
+		margin-bottom: 5px;
+		text-transform: uppercase;	
+	}
+	.modal-dialog {
+		width: 680px !important;
+	}
+	.modal-content {
+		margin: 20px auto !important;
+		width: 680px !important;
+	}
+	.youtube-player {
+		height: 360px;
+		margin: 0px auto;
+		width: 640px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 7.4 Styles for small devices only
+ * ----------------------------------------------------------------------------
+ */
+@media (min-width: 768px) and (max-width: 991px) {
+	.container {
+		margin: 0em 1em;	
+	}
+
+
+
+
+
+	.navbar-header {
+		margin-top: -20px;
+	}
+
+
+
+
+
+	#content #welcome {
+		margin-bottom: 50px;
+	}
+	body.home #content #gifts div {
+		padding: 6px;
+	}
+
+
+	body.single #content > .container > .row,
+	body.single #content #side-nav {
+		padding-left: 0px;
+	}
+	body.single #content #side-nav {
+		margin-right: -15px;
+		margin-left: -15px;
+		padding-right: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 7.5 Styles for extra small and small devices
+ * ----------------------------------------------------------------------------
+ */
+@media (max-width: 991px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 7.6 Styles for medium and large devices
+ * ----------------------------------------------------------------------------
+ */
+@media (min-width: 992px) {
+	.container {
+		padding: 0px;
+	}
+
+
+
+
+	a.btn {
+		display: inline-block !important;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	a.smartphone {
+		display: none !important;	
+	}
+
+
+
+
+
+	body.home #content  {
+		background: url('/wp-content/themes/lincolnmakers/img/home-hero.jpg') 50% 0px no-repeat;
+	}
+	#content #welcome {
+		margin-bottom: 1em;
+		min-height: 300px;
+	}
+	body.home #content #welcome h1,
+	body.home #content #welcome p {
+		width: 50%;	
+	}
+	#content #welcome h1 {
+		margin-top: 2em;	
+	}
+	body.page-summary #content h1 {
+		margin-top: 2em;	
+	}
+	#content #welcome p {
+		font-size: 1em;
+		line-height: 1.3em;	
+	}
+	body.home #content #gifts {
+		margin: 0px 6px;
+	}
+	body.home #content #gifts div {
+		padding: 3px;
+	}
+	body.home #content h2 {
+		font-size: 1.3em;
+		letter-spacing: 0.07em;
+		margin: 0em 0em 0.5em 0em;
+		padding: 0.5em;	
+	}
+	body.home #content #gifts p {
+		font-size: 0.85em;	
+		line-height: 1.4em;
+		text-align: left;
+	}
+
+
+	body.page-summary #content {
+		background: url('/wp-content/themes/lincolnmakers/img/bg-2.jpg') 50% 0px no-repeat;
+	}
+	body.page-summary #content h1,
+	body.page-summary #content p {
+		width: 50%;
+	}
+
+
+
+
+
+	.modal-dialog {
+		width: 900px !important;
+	}
+	.modal-content {
+		margin: 40px auto !important;
+		width: 900px !important;
+	}
+	.youtube-player {
+		height: 473px;
+		margin: 0px auto;
+		width: 840px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * 7.7 Styles for large devices only
+ * ----------------------------------------------------------------------------
+ */
+@media (min-width: 1200px) {
+
+}

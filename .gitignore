@@ -1,0 +1,6 @@
+# Ignore everything except the .gitignore file and wp-content directory
+
+/*
+!/.gitignore
+!/wp-content
+!/wp-content/*
