@@ -385,7 +385,7 @@ body.post-icon #side-nav ul > li.icon > a > p {
 .flex-control-paging li a {
 	background: #d4d4d4;
 	-webkit-border-radius: 0px; -moz-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px;
-	box-shadow: none;
+	border: solid 1px #f90;
 	height: 3px;
 	width: 46px;
 }
