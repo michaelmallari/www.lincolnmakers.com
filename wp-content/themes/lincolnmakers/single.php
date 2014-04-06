@@ -48,16 +48,16 @@
 
 
 
-							<div id="call-to-action" class="col-xs-12 col-sm-5 col-md-4 col-lg-4">								
-								<div id="locate-dealer" class="container">
+							<div id="call-to-action" class="col-xs-12 col-sm-5 col-md-4 col-lg-4">	
+								<div id="locate-dealer">
 									<p><?php echo get_post_meta($post->ID, 'call-to-action', true); ?></p>
-									<a href="#">Locate a Dealer</a>
+									<a href="#" class="btn btn-primary">Locate a Dealer</a>
 								</div>
 
 
-								<div id="learn-more" class="container">
+								<div id="learn-more">
 									<p>Get more information on the Lincoln Makers Program and how to pre-order a new Lincoln MKZ.</p>
-									<a href="<?php bloginfo('url'); ?>/summary/">Learn More</a>
+									<a href="<?php bloginfo('url'); ?>/summary/" class="btn btn-primary btn-xs">Learn More</a>
 								</div>
 							</div>
 <!--/#call-to-action -->
