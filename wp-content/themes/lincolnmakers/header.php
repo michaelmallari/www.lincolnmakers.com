@@ -79,21 +79,6 @@
 		<script src="<?php bloginfo('template_directory'); ?>/js/html5shiv-3.7.0.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/respond-1.4.2.min.js"></script>
 <![endif]-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/bootstrap-3.1.1.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider-2.2.0.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				$('.flexslider').flexslider({
-					animation: "slide",
-					animationLoop: true,
-					directionNav: false,
-					itemMargin: 0,
-					slideshowSpeed: 15000,
-					touch: true
-				});
-			});
-		</script>
 		<script>
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-6570849-1']);

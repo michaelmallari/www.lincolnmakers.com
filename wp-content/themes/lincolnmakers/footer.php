@@ -48,5 +48,20 @@
 <?php endwhile; else: ?>
 <?php endif; ?>
 
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/bootstrap-3.1.1.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider-2.2.0.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.flexslider').flexslider({
+					animation: "slide",
+					animationLoop: true,
+					directionNav: false,
+					itemMargin: 0,
+					slideshowSpeed: 15000,
+					touch: true
+				});
+			});
+		</script>
 	</body>
 </html>
