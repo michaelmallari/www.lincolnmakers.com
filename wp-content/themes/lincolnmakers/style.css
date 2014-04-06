@@ -373,7 +373,7 @@ body.post-icon #side-nav ul > li.icon > a > p {
 	display: block;
 }
 .flexslider {
-	border: solid 1px #f90;
+	box-shadow: none;
 	margin: 0px;
 	padding: 0px;
 }
