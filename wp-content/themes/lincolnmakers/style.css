@@ -519,9 +519,9 @@ body.post-icon #side-nav ul > li.icon > a > p {
 
 
 	body.single h1 {
-		font-size: 0.8em;
-		right: 5;
-		top: 10;
+		font-size: 1.1em;
+		right: 10px;
+		top: 10px;
 	}
 	.flexslider {
 		margin-right: -15px;

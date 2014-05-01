@@ -74,7 +74,7 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap-3.1.1.min.css">
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/flexslider-2.2.0.css">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700|Crimson+Text">
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+		<link rel="stylesheet" href="/wp-content/themes/lincolnmakers/style.css">
 <!--[if lt IE 9]>
 		<script src="<?php bloginfo('template_directory'); ?>/js/html5shiv-3.7.0.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/js/respond-1.4.2.min.js"></script>
