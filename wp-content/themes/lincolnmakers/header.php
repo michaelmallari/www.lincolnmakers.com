@@ -87,6 +87,7 @@
 
 
 			ga('create', 'UA-6570849-1', 'michaelmallari.com');
+			ga('require', 'displayfeatures');
 			ga('send', 'pageview');
 		</script>
 	</head>
