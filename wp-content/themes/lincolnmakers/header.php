@@ -93,9 +93,6 @@
 	</head>
 
 
-
-
-
 	<body <?php body_class(); ?>>
 		<header id="header" class="navbar navbar-default">
 			<div class="container">
@@ -122,7 +119,7 @@
 
 
 				<div class="navbar-header">
-					<a href="<?php bloginfo('url'); ?>/"><img src="/wp-content/themes/lincolnmakers/img/logo.png" alt="The Lincoln Motor Company" class="logo"></a>
+					<a href="/"><img src="/wp-content/themes/lincolnmakers/img/logo.png" alt="The Lincoln Motor Company" class="logo"></a>
 
 
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
