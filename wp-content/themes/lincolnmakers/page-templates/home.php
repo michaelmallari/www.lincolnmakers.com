@@ -26,7 +26,7 @@ get_header(); ?>
 				<div id="gifts" class="row">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2"><a href="<?php echo get_permalink(); ?>">
-						<img src="http://www-lincolnmakers-com.herokuapp.com/wp-content/uploads/<?php
+						<img src="/wp-content/uploads/<?php
 							if( get_post_meta($post->ID, 'og-image', true) ) {
 								echo get_post_meta($post->ID, 'og-image', true);
 							}

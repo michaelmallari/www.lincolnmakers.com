@@ -19,8 +19,8 @@
 				}
 			} ?></title>
 		<meta name="robots" content="noindex, nofollow">
-		<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/img/icon.jpg">
-		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
+		<link rel="apple-touch-icon" href="/wp-content/themes/lincolnmakers/img/icon.jpg">
+		<link rel="shortcut icon" href="/wp-content/themes/lincolnmakers/img/favicon.ico">
 		<meta name="description" content="<?
 			if( get_post_meta($post->ID, 'meta-description', true) != null ) {
 				echo get_post_meta($post->ID, 'meta-description', true);
@@ -64,20 +64,20 @@
 		?>">
 		<meta property="og:image" content="<?
 			if( get_post_meta($post->ID, 'og-image', true) != null ) {
-				echo 'http://www-lincolnmakers-com.herokuapp.com/wp-content/uploads/';
+				echo '/wp-content/themes/lincolnmakers/uploads/';
 				echo get_post_meta($post->ID, 'og-image', true);
 			} else {
-				echo bloginfo('template_directory') . '/img/logo.png';
+				echo '/wp-content/themes/lincolnmakers/img/logo.png';
 			}
 		?>">
 		<meta property="og:url" content="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>">
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap-3.1.1.min.css">
-		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/flexslider-2.2.0.css">
+		<link rel="stylesheet" href="/wp-content/themes/lincolnmakers/css/bootstrap-3.1.1.min.css">
+		<link rel="stylesheet" href="/wp-content/themes/lincolnmakers/css/flexslider-2.2.0.css">
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700|Crimson+Text">
 		<link rel="stylesheet" href="/wp-content/themes/lincolnmakers/style.css">
 <!--[if lt IE 9]>
-		<script src="<?php bloginfo('template_directory'); ?>/js/html5shiv-3.7.0.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/respond-1.4.2.min.js"></script>
+		<script src="/wp-content/themes/lincolnmakers/js/html5shiv-3.7.0.js"></script>
+		<script src="/wp-content/themes/lincolnmakers/js/respond-1.4.2.min.js"></script>
 <![endif]-->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -122,7 +122,7 @@
 
 
 				<div class="navbar-header">
-					<a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="The Lincoln Motor Company" class="logo"></a>
+					<a href="<?php bloginfo('url'); ?>/"><img src="/wp-content/themes/lincolnmakers/img/logo.png" alt="The Lincoln Motor Company" class="logo"></a>
 
 
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
