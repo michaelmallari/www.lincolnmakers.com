@@ -57,7 +57,7 @@
 
 								<div id="learn-more">
 									<p>Get more information on the Lincoln Makers Program and how to pre-order a new Lincoln MKZ.</p>
-									<a href="<?php bloginfo('url'); ?>/summary/" class="btn btn-primary btn-xs">Learn More</a>
+									<a href="/summary/" class="btn btn-primary btn-xs">Learn More</a>
 								</div>
 							</div>
 <!--/#call-to-action -->

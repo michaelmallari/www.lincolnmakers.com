@@ -109,13 +109,13 @@
 						<li><a href="#" class="concierge">Concierge</a></li>
 					</ul><!--/.navbar-nav -->
 					<ul class="nav navbar-nav visible-xs">
-						<li><a href="<?php bloginfo('url'); ?>">Home</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/getaway/">The Getaway</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/vineyard/">The Vineyard</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/finish/">The Finish</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/look/">The Look</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/blend/">The Blend</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/icon/">The Icon</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/getaway/">The Getaway</a></li>
+						<li><a href="/vineyard/">The Vineyard</a></li>
+						<li><a href="/finish/">The Finish</a></li>
+						<li><a href="/look/">The Look</a></li>
+						<li><a href="/blend/">The Blend</a></li>
+						<li><a href="/icon/">The Icon</a></li>
 					</ul><!--/.navbar-nav -->
 				</nav>
 <!--/#top-nav -->
